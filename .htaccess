@@ -1,0 +1,7 @@
+# .htaccess file to enable Basic Authentication
+# Note: AuthUserFile must be an absolute path to the .htpasswd file.
+# Change /app/.htpasswd to the actual path in your production environment.
+AuthType Basic
+AuthName "Restricted Area"
+AuthUserFile /app/.htpasswd
+Require valid-user
